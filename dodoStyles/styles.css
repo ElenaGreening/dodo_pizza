@@ -1,0 +1,843 @@
+
+.dodo-body {
+    font-family: Nunito, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+@media (min-width: 778px) {
+    .dodo-body{
+        align-items: center;
+        justify-content: center;
+    }
+}
+.dodo-header_desktop{
+    width: 100%;
+     display: none;
+    padding-top: 15px;
+    /*z-index: 3;*/
+}
+@media (min-width: 1280px) {
+    .dodo-header_desktop{
+        display: block;
+    }
+}
+/*_____________________________________________________Desktop-nav-info_________________________________________________*/
+
+.dodo-nav_info-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dodo-nav-info-desktop__details{
+    display: flex;
+    flex-direction: column;
+}
+.dodo-div1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.dodo-reset {
+    margin: 0;
+    padding: 0;
+}
+.dodo-nav_info-desktop-contacts{
+
+}
+.nunito18{
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+}
+.dodo-tel-sign{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #999999;
+    margin: 0;
+}
+.Orange-corporate{
+    color: #F96900;
+}
+.dodo-button-enter-static--position{
+}
+
+/*_____________________________________________________Desktop-navigation_________________________________________________*/
+
+.dodo-nav-desktop{
+    /*position: sticky;*/
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+}
+.dodo-nav-desktop-list{
+    width: 1060px;
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.dodo-nav-desktop-list_item{
+    display: flex;
+}
+.dodo-nav-desktop_link {
+    display: flex;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: black;
+}
+/*____________________________________________________MobileHeader___________________________________________________-*/
+.dodo-header{
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 47px;
+}
+@media (min-width: 1280px) {
+    .dodo-header{
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+    }
+}
+.dodo-header-nav{
+display: flex;
+}
+#menu__toggle {
+    opacity: 0;
+}
+.dodo-hamburger-menu{
+    height: 100%;
+    display: flex;
+}
+.dodo-logo{
+    /*content: '';*/
+   background-image: url("../allImages/images/LOGOblack.png");
+    width: 158px;
+    height: 23px;
+    z-index: 2;
+    margin-top: 9px;
+
+}
+.dodo-header__menu_btn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 19px;
+    right: 16px;
+    width: 20px;
+    height: 10px;
+    z-index: 1;
+}
+.dodo-header__menu_btn > span,
+.dodo-header__menu_btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+}
+.dodo-header__menu_btn > span::before {
+    content: '';
+    top: -10px;
+}
+.dodo-header__menu_btn > span::after {
+    content: '';
+    top: 10px;
+}
+.dodo-header__menu_box{
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 47px 0;
+    list-style: none;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+#menu__toggle:checked ~ .dodo-header__menu_btn > span {
+    transform: rotate(45deg);
+    background-color: #FFFFFF;
+}
+#menu__toggle:checked ~ .dodo-header__menu_btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+    background-color: #FFFFFF;
+}
+#menu__toggle:checked ~ .dodo-header__menu_box {
+    visibility: visible;
+    left: 0;
+}
+#menu__toggle:checked + .dodo-logo{
+    background-image: url("../allImages/images/LOGOwhite.png");
+}
+#menu__toggle:checked + .dodo-grey_line{
+    visibility: visible;
+}
+.dodo-header-menu_box__link{
+    display: block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    text-align: left;
+
+}
+#rating{
+    opacity: 0;
+}
+.dodo-rating-div{
+    display: flex;
+    justify-content: flex-start;
+}
+.dodo-rating-border{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    border-top: 1px solid rgba(243, 243, 247, 0.3);
+}
+.dodo-rating{
+    display: flex;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+}
+.dodo-header-menu_box__link--borderTop{
+    border-top: 1px solid rgba(243, 243, 247, 0.3);
+}
+.dodo-header-menu_box__link--borderBottom{
+    border-bottom: 1px solid rgba(243, 243, 247, 0.3);
+}
+.dodo-header-menu_box--listItem{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    padding-left: 16px;
+}
+.dodo-header-menu_box__link--padding{
+    padding-left: 16px;
+}
+.dodo-menu_div{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+.dodo-menu_box--par{
+    display: flex;
+    margin: 0;
+}
+.dodo-remove_padding{
+    padding-bottom: 0;
+}
+.dodo-list-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.dodo-menu_box--par{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFFFFF;
+    opacity: 0.3;
+    margin-right: 15px;
+}
+/*____________________________________________Main_____________________________________________________*/
+.dodo-main{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #FFFFFF;
+    max-width: 1280px;
+}
+
+.dodo-banner-slider{
+    width: 100%;
+    height: 100%;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+@media (max-width: 720px){
+    .dodo-banner-slider--img{
+        width: 560px;
+        height: 208px;
+    }
+}
+@media (max-width: 320px){
+    .dodo-banner-slider--img{
+        width: 250px;
+        height: 93px;
+        border-width: 1px;
+        border-style: none;
+        border-radius: 1px;
+    }
+}
+.dodo-banner-slider--item{
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.dodo-banner-slider--img{
+    border-style: none;
+    border-width: 1px;
+    border-radius: 30px;
+}
+
+.dodo-menu {
+    display: flex;
+    flex-direction: column;
+    /*width: 100%;*/
+}
+@media (min-width: 600px){
+    .dodo-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 680px;
+    }
+}
+@media (min-width: 900px){
+    .dodo-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 960px;
+    }
+}
+@media (min-width: 1280px){
+    .dodo-menu{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 1280px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+.dodo-menu__header{
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+}
+.dodo-productCard--border{
+    border-bottom: #F3F3F7;
+    border-bottom-style: solid;
+    border-width: 1px;
+    margin: 0;
+}
+/*____________________________________________SliderPopular_________________________________________________*/
+.dodo-product-slider--align{
+display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+.dodo-product-slider__title{
+    display: flex;
+     font-family: Nunito, sans-serif;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 20px;
+     line-height: 27px;
+     color: #000000;
+     margin-top: 0;
+     margin-bottom: 10px;
+ }
+.dodo-product-slider__list{
+    margin: 0 auto;
+    width: 1080px;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dodo-banner-slider__CardContainer{
+    display: flex;
+}
+
+/*_____________________________________________________SliderMenu_______________________________*/
+.dodo-menu-slider {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 800px;
+}
+@media (min-width: 1280px){
+    .dodo-menu-slider{
+        display: none;
+    }
+}
+.dodo-menu-slider--item{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 31px;
+    border-style: none;
+    border-width: 1px;
+    border-radius: 20px;
+    background-color: #F3F3F7;
+    margin-right: 10px;
+    margin-left: 10px;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #464C55;
+}
+/*}_______________________MainDesktop_________________________*/
+
+/*@media (min-width: 1280px) {*/
+/*    .dodo-desktop-main{*/
+/*        display: none;*/
+/*        flex-direction: column;*/
+/*        justify-content: center;*/
+/*        width: 1060px;*/
+/*        margin: 0 auto;*/
+/*    }*/
+/*}*/
+
+.dodo-desktop-products__header{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+
+/*<!--______________________________________________Delivery and Payment_____________________________________________________-->*/
+.dodo-delivery-container{
+    display: none;
+}
+@media (min-width: 1280px){
+   .dodo-delivery-container{
+       display: block;
+       width: 1060px;
+       margin: 60px auto 70px auto;
+   }
+
+}
+.dodo-delivery__header{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+    margin-bottom: 50px;
+    margin-top: 0;
+
+}
+.dodo-delivery_wrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dodo-delivery_div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.dodo-delivery-title{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    color: #F96900;
+}
+.dodo-delivery-text{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+/*__________________________________________________footer_________________________________________________________*/
+.dodo-align-footer{
+    display: flex;
+    justify-content: center;
+}
+.dodo-footer{
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+    background-color:#464C55;
+    padding-top: 20px;
+}
+
+
+@media (min-width: 1280px) {
+    .dodo-footer{
+        width: 1280px;
+        padding-right: 110px;
+        padding-left: 110px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .dodo-footer-columns{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 707px;
+    }
+}
+.dodo-footer__link{
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    Font-family: Nunito, sans-serif;
+    Font-style: normal;
+    Font-size: 16px;
+    Vertical-align: Top;
+    margin-bottom: 20px;
+}
+.div-grey_line_container{
+    display: flex;
+    justify-content: center;
+}
+.dodo-grey_line{
+    display: flex;
+    width: 98%;
+    height: 1px;
+    background-color: #f3f3f7;
+    opacity: 0.1;
+}
+@media (min-width: 1280px){
+    .div-grey_line_container{
+        display: none;
+    }
+}
+
+.dodo-footer_list{
+    list-style: none;
+    padding: 0;
+    width: 166px;
+}
+
+@media (min-width: 1280px) {
+    .dodo-footer-wrap-row{
+    display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+    .dodo-footer--spaceBetween{
+        justify-content: space-between;
+    }
+    .dodo-footer-BottomContainer{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 780px;
+        justify-content: space-between;
+        margin:0;
+     }
+}
+
+.dodo-footer_list__item{
+    Font-family: Nunito, sans-serif ;
+    Font-Weight: 400;
+    Font-Style: normal;
+    Font-Size: 16px;
+    Line-height: 24px;
+    color: #C7C9CC;
+    text-align: left;
+}
+.dodo-footer__title{
+    Font-family: Nunito, sans-serif ;
+    Font-Weight: 600;
+    Font-Style: normal;
+    Font-Size: 16px;
+    Line-height: 24px;
+    color: #FFFFFF;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+@media (min-width: 1280px) {
+    .dodo-footer__title{
+        margin: 0;
+    }
+
+}
+.footer-logo-div{
+    padding: 0;
+    width: 184px;
+    height: 32px;
+}
+.footer-logo-list{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+@media (min-width: 1280px){
+    .footer-logo-list{
+        margin: 0;
+    }
+}
+.footer-logo-list__item{
+}
+.dodo-footer-grey_square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background-color: #676C74 ;
+    border-radius: 4px;
+    opacity: 0.5;
+}
+/*.footer-img-div{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    justify-content: flex-start;*/
+/*    margin-bottom: 10px;*/
+/*}*/
+.footer-flex-start{
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*.dodo-wrap--column--reverse{*/
+/*    display: flex;*/
+/*    flex-direction: column-reverse;*/
+/*}*/
+/*@media (min-width: 1280px){*/
+/*    .dodo-wrap--column--reverse{*/
+/*        display: flex;*/
+/*        flex-direction: column-reverse;*/
+/*    }*/
+/*}*/
+.footer-contacts{
+    display: none;
+}
+@media (min-width: 1280px) {
+    .footer-contacts{
+        display: flex;
+    }
+    .dodo-div-wrap{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+@media (min-width: 1280px){
+    .dodo-wrap--column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1280px) {
+    .dodo-footer__link{
+        display: none;
+    }
+    .dodo-footer-wrap__right{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+.dodo-footer__link2{
+    display: none;
+}
+@media (min-width: 1280px){
+    .dodo-footer__link2{
+        display: block;
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: Nunito, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: right;
+        opacity: 0.9;
+    }
+}
+.dodo-footer_tel{
+    color: #FFFFFF;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 26px;
+    text-decoration: none;
+}
+.dodo-footer_tel__sign{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    color: #999999;
+    margin: 0;
+}
+.dodo-footer__info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+@media(min-width: 1280px) {
+    .dodo-footer__info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 510px;
+    }
+}
+.footer-info__link{
+    text-decoration: none;
+    color: #C7C9CC;
+    Font-family: Nunito, sans-serif ;
+    Font-Weight: 400;
+    Font-Style: normal;
+    Font-Size: 16px;
+    Line-height: 22px;
+    text-align: left;
+}
+/*.footer-copyright{*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    padding-bottom: 31px;*/
+/*}*/
+.dodo-footer-desktopSection{
+    display: none;
+}
+
+
+@media (min-width: 1280px){
+    .dodo-footer-desktopSection{
+        display: flex;
+        flex-direction: row;
+    }
+    .dodo-footer-desktopSection__par{
+        width: 299px;
+        font-family: Nunito, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 22px;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+    .dodo-footer-desktopSection__par--modify {
+        font-family: Nunito, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 26px;
+        color: #ffffff;
+        opacity: 1;
+        /*-----------почему Opacity неперезадается?-----*/
+    }
+}
+.popUpEnter{
+    display: none;
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    margin: 0 auto;
+}
+.cardHolder{
+    display: flex;
+    flex-direction: column;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+.sticky-basket{
+    display: none;
+    width: 56px;
+    height: 56px;
+    position: fixed;
+    top: 250px;
+    right: 10px;
+}
+.mob-basket{
+    background-color: #F96900;
+    border-radius: 50px;
+    border-color: #F96900;
+    border-style: none;
+    width: 50px;
+    height: 50px;
+}
+.basket-meter{
+    width: 22px;
+    height: 22px;
+    border-color: #F96900;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #FFFFFF;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.position--sticky{
+    display: none;
+    position: fixed;
+    right: 250px;
+
+
+}

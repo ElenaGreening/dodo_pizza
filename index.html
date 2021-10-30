@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dodoStyles/UIkit.css" />
+    <link rel="stylesheet" href="dodoStyles/styles.css" />
+    <link rel="stylesheet" href="dodoStyles/colours.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="dodoStyles/doProductPopup.css" />
+  </head>
+  <body class="dodo-body">
+    <div class="dodo-product-popUp">
+      <div class="popup-body">
+        <div class="dodo-popup-wrapper">
+          <div class="popup-arrow">
+            <img
+              class="popup-arrow-img"
+              src="allImages/VectorTick.png"
+              height="14"
+              width="24"
+            />
+          </div>
+          <img class="popupImg" src="#" />
+          <button class="dodo-info-button">
+            <img src="allImages/VectorInfo.png" height="10" width="4" />
+          </button>
+          <div class="dodo-popup-calories">
+            <h2 class="dodo-popup-calories-header">
+              Пищевая ценность на 100 г
+            </h2>
+          </div>
+
+          <h1 class="dodo-product-popUp-header">Чиззи Чиз</h1>
+          <p class="popup-shortInfo"></p>
+          <p class="pizza-ingredients"></p>
+          <div class="dodo-popup-fieldsets">
+            <fieldset class="dodo-radio-fieldset">
+              <input
+                class="dodo-popUp-input"
+                type="radio"
+                id="small"
+                name="sizes"
+              />
+              <label class="dodo-radio-label-small" for="small"
+                >Маленькая</label
+              >
+
+              <input
+                class="dodo-popUp-input"
+                type="radio"
+                id="medium"
+                name="sizes"
+                checked
+              />
+              <label class="dodo-radio-label-medium" for="medium"
+                >Средняя</label
+              >
+
+              <input
+                class="dodo-popUp-input"
+                type="radio"
+                id="big"
+                name="sizes"
+              />
+              <label class="dodo-radio-label-big" for="big">Большая</label>
+            </fieldset>
+            <fieldset class="dodo-radio-fieldset">
+              <input
+                class="dodo-popUp-input-dough"
+                type="radio"
+                id="traditional"
+                name="dough"
+                checked
+              />
+              <label class="dodo-radio-label-traditional" for="traditional"
+                >Традиционное</label
+              >
+
+              <input
+                class="dodo-popUp-input-dough"
+                type="radio"
+                id="thin"
+                name="dough"
+              />
+              <label class="dodo-radio-label-thin" for="thin">Тонкое</label>
+            </fieldset>
+          </div>
+
+          <h2
+            class="dodo-product-popUp-header dodo-product-popUp-header--nunito16"
+          >
+            Добавить в пиццу
+          </h2>
+          <fieldset class="toppings--container">
+            <div class="dodo-topping-sweetWrapper">
+              <input
+                class="dodo-topping-input"
+                id="topping__toggle"
+                type="checkbox"
+              />
+              <label class="dodo-topping-label" for="topping__toggle">
+                <!--            <div class = "dodo-topping-wrap">-->
+                <img
+                  class="dodo-topping-img"
+                  src="allImages/toppingImg/cheeseborder.png"
+                />
+                <h2 class="topping-header"></h2>
+                <p class="topping-price"></p>
+                <!--            </div>-->
+              </label>
+            </div>
+          </fieldset>
+        </div>
+        <div class="dodo-button-wrapper">
+          <button class="dodo-product-popUp-toBasket-button"></button>
+        </div>
+      </div>
+    </div>
+    <header class="dodo-header_desktop">
+      <!--    /*_____________________________________________________Desktop-nav-info_________________________________________________*/-->
+      <nav class="dodo-nav_info-desktop">
+        <img src="allImages/images/logoDesktop.png" height="48" width="249" />
+        <div class="dodo-nav-info-desktop__details">
+          <div class="dodo-div1">
+            <p class="dodo-reset font-modif">Доставка пиццы</p>
+            <a class="dodo-nav-info-desktop__link Orange-corporate" href="#"
+              >Москва</a
+            >
+          </div>
+          <div class="dodo-div1">
+            <p class="dodo-reset">34 мин</p>
+            <img
+              src="allImages/images/Доставка%20пиццы/Ellipse 1.png"
+              height="4"
+              width="4"
+            />
+            <p class="dodo-reset">4.72</p>
+            <img
+              src="allImages/images/Доставка%20пиццы/Vector.png"
+              height="17"
+              width="16"
+            />
+          </div>
+        </div>
+        <div class="dodo-nav_info-desktop-contacts">
+          <a class="nunito18" href="#">8 800 302-00-60</a>
+          <p class="dodo-tel_sign">Звонок бесплатный</p>
+        </div>
+        <button class="dodo-button-enter dodo-button-enter-static--position">
+          Войти
+        </button>
+        <div class="popUpEnter"></div>
+      </nav>
+      <!--    /*_____________________________________________________Desktop-navigation_________________________________________________*/-->
+      <nav class="dodo-nav-desktop">
+        <ul class="dodo-nav-desktop-list">
+          <li class="dodo-nav-desktop-list_item">
+            <a class="dodo-nav-desktop_link" href="#">Пицца</a>
+          </li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">Комбо</a>
+          </li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">Закуски</a>
+          </li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">Десерты</a>
+          </li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">Напитки</a>
+          </li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">Другие товары</a>
+          </li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">Акции</a>
+          </li>
+          <li><a class="dodo-nav-desktop_link" href="#">Контакты</a></li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">О нас</a>
+          </li>
+          <li>
+            <a class="dodo-nav-desktop_link" href="#">Прямой эфир</a>
+          </li>
+        </ul>
+        <button class="dodo-button-basket">Корзина</button>
+        <div class="dodo-EmptyBasket">
+          <img class="dodo-EmptyBasket__img" src="allImages/images/image%205.png" />
+          <div class="dodo-EmptyBasket__div">
+            <p class="dodo-EmptyBasket__header">Ой, пусто!</p>
+            <p class="dodo-EmptyBasket__par">
+              Мы всегда доставляем бесплатно, но сумма заказа должна быть от 495
+              ₽
+            </p>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--    /*_____________________________________________________Mobile-header_________________________________________________*/-->
+    <header class="dodo-header">
+      <nav class="dodo-header-nav">
+        <div class="dodo-hamburger-menu">
+          <input id="menu__toggle" type="checkbox" />
+          <div class="dodo-logo"></div>
+          <label class="dodo-header__menu_btn" for="menu__toggle">
+            <span></span>
+          </label>
+          <ul class="dodo-header__menu_box">
+            <li
+              class="dodo-header-menu_box--listItem dodo-header-menu_box__link--borderTop"
+            >
+              <img src="allImages/images/Vector.png" height="16" width="10" />
+              <div class="dodo-list-div">
+                <a
+                  href="#"
+                  class="dodo-header-menu_box__link dodo-remove_padding"
+                  >Москва</a
+                >
+                <p class="dodo-menu_box--par">Изменить</p>
+              </div>
+            </li>
+            <li class="dodo-rating-div">
+              <div class="dodo-rating-border">
+                <input id="rating" type="checkbox" />
+                <label class="dodo-rating" for="rating">33 мин</label>
+                <label class="dodo-rating" for="rating"
+                  ><img src="allImages/images/raiting.png" height="27" width="134"
+                /></label>
+                <label class="dodo-rating" for="rating"
+                  ><img src="allImages/images/info.png" height="24" width="24"
+                /></label>
+              </div>
+            </li>
+            <div
+              class="dodo-header-menu_box__link--borderTop dodo-header-menu_box__link--borderBottom dodo-header-menu_box__link--padding"
+            >
+              <li>
+                <a href="#" class="dodo-header-menu_box__link">Профиль</a>
+              </li>
+              <li>
+                <a href="#" class="dodo-header-menu_box__link">Мои бонусы</a>
+              </li>
+              <li>
+                <a href="#" class="dodo-header-menu_box__link">Акции</a>
+              </li>
+              <li>
+                <a href="#" class="dodo-header-menu_box__link">Контакты</a>
+              </li>
+              <li>
+                <a href="#" class="dodo-header-menu_box__link">Работа в Додо</a>
+              </li>
+              <li>
+                <a href="#" class="dodo-header-menu_box__link">Франшиза</a>
+              </li>
+              <li>
+                <a href="#" class="dodo-header-menu_box__link">О нас</a>
+              </li>
+            </div>
+            <li class="dodo-header-menu_box--listItem">
+              <img src="allImages/images/Vector2.png" height="24" width="13" />
+              <div class="dodo-list-div">
+                <a
+                  href="#"
+                  class="dodo-header-menu_box__link dodo-remove_padding"
+                  >8 800 302-00-60</a
+                >
+                <p class="dodo-menu_box--par">Звонок бесплатный</p>
+              </div>
+            </li>
+            <li class="dodo-header-menu_box--listItem">
+              <img src="allImages/images/Vector3.png" height="20" width="18" />
+              <div class="dodo-list-div">
+                <a
+                  href="#"
+                  class="dodo-header-menu_box__link dodo-remove_padding"
+                  >App Store</a
+                >
+                <p class="dodo-menu_box--par">приложение</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- ---------------------------------------корзина----------- -->
+    <div class="dodo-shopping-trolley">
+      <p class="dodo-product-quantity">2 товара</p>
+      <div class="dodo-shopping-trolley-product">
+        <div class="dodo-shopping-trolley-product-description">
+          <img
+            class="dodo-shopping-trolley-product-img"
+            src="allImages/do-do-pizzas-img%20copy/arriva/arriva-thin-big.jpeg"
+          />
+          <div class="dodo-shopping-trolley-product-info">
+            <title class="dodo-shopping-trolley-product-title">Зенит</title>
+            <span class="dodo-shopping-trolley-product-shortInfo"
+              >Средняя 30см, традиционное тесто</span
+            >
+            <span class="dodo-shopping-trolley-product-additionalIngredients"
+              >+ острый халапеньо</span
+            >
+          </div>
+        </div>
+        <!--        <div class="dodo-shopping-trolley_greyLine"></div>-->
+        <div
+          class="dodo-shopping-trolley-product-priceQuantity wrap-SpaceBetween"
+        >
+          <p class="dodo-shopping-trolley-product-price">666р</p>
+          <button class="dodo-shopping-trolley-product-Quantity--button">
+            +1-
+          </button>
+        </div>
+      </div>
+
+      <div class="dodo-shopping-trolley-product">
+        <div class="dodo-shopping-trolley-product-description">
+          <img class="dodo-shopping-trolley-product-img" src="allImages/doodSet.png" />
+          <div class="dodo-shopping-trolley-product-info">
+            <title class="dodo-shopping-trolley-product-title">
+              Додо набор
+            </title>
+            <span class="dodo-shopping-trolley-product-shortInfo">1 шт</span>
+            <img class="dodo-basket-svg" src="allImages/present.png" />
+          </div>
+        </div>
+        <div
+          class="dodo-shopping-trolley-product-priceQuantity wrap-SpaceBetween"
+        >
+          <p class="dodo-shopping-trolley-product-price">0р</p>
+          <button class="dodo-shopping-trolley-product-Quantity--button">
+            +1-
+          </button>
+        </div>
+      </div>
+      <p class="nunito18">Добавить в пиццу</p>
+      <section class="dodo-shopping-trolley-slider">
+        <div class="dodo-shopping-trolley-slider_SauceCard">
+          <img src="allImages/image%202.png" />
+          <p class="dodo-shopping-trolley-slider_title">Цезарь</p>
+        </div>
+        <div class="dodo-shopping-trolley-slider_Card">
+          <img class="dodo-shopping-trolley-slider-img" src="allImages/dogster.png" />
+          <div class="dodo-shopping-trolley-slider-info-wrapper">
+            <p class="dodo-shopping-trolley-slider_title">Цезарь</p>
+            <p class="dodo-shopping-trolley-slider_price">159P</p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <p>Промокод</p>
+        <fieldset class="dodo-shopping-trolley-fieldset">
+          <input
+            class="dodo-shopping-trolley-promoInput"
+            data-id="promocode_input"
+            type="text"
+            placeholder="Введите промокод"
+          />
+          <button class="dodo-shopping-trolley-promoButton">Применить</button>
+        </fieldset>
+        <div class="wrap-SpaceBetween">
+          <p>Стоимость</p>
+          <p>790Р</p>
+        </div>
+        <button class="dodo-shopping-trolley-button">
+          Перейти к оформлению заказа
+        </button>
+      </section>
+    </div>
+
+    <!--__________________________________________________________Mobile-banners_________________________________________________-->
+    <ul class="dodo-banner-slider">
+      <li class="dodo-banner-slider--item">
+        <img
+          class="dodo-banner-slider--img"
+          src="allImages/bannerImg/banners1.jpeg"
+          height="340"
+          width="990"
+        />
+      </li>
+      <li class="dodo-banner-slider--item">
+        <img
+          class="dodo-banner-slider--img"
+          src="allImages/bannerImg/banner2.jpeg"
+          height="340"
+          width="990"
+        />
+      </li>
+      <li class="dodo-banner-slider--item">
+        <img
+          class="dodo-banner-slider--img"
+          src="allImages/bannerImg/banner3.jpeg"
+          height="340"
+          width="990"
+        />
+      </li>
+    </ul>
+
+    <div class="dodo-product-slider--align">
+      <p class="dodo-product-slider__title">Новое и популярное</p>
+      <ul class="dodo-product-slider__list">
+        <li class="dodo-banner-slider__CardContainer">
+          <div class="dodo-product-slider-card">
+            <img
+              class="dodo-product-slider-card__img"
+              src="allImages/images/Новое%20и%20популярное/image 2.png"
+              height="76"
+              width="76"
+            />
+            <div class="dodo-product-slider-card__info">
+              <p class="dodo-product-slider-card__par">Цезарь</p>
+              <p
+                class="dodo-product-slider-card__par dodo-product-slider-card__par--price"
+              >
+                от 445 ₽
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="dodo-banner-slider__CardContainer">
+          <div class="dodo-product-slider-card">
+            <img
+              class="dodo-product-slider-card__img"
+              src="allImages/images/Новое%20и%20популярное/image 2.png"
+              height="76"
+              width="76"
+            />
+            <div class="dodo-product-slider-card__info">
+              <p class="dodo-product-slider-card__par">Нежный лосось</p>
+              <p
+                class="dodo-product-slider-card__par dodo-product-slider-card__par--price"
+              >
+                от 445 ₽
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="dodo-banner-slider__CardContainer">
+          <div class="dodo-product-slider-card">
+            <img
+              class="dodo-product-slider-card__img"
+              src="allImages/images/Новое%20и%20популярное/image 2.png"
+              height="76"
+              width="76"
+            />
+            <div class="dodo-product-slider-card__info">
+              <p class="dodo-product-slider-card__par">2 пиццы</p>
+              <p
+                class="dodo-product-slider-card__par dodo-product-slider-card__par--price"
+              >
+                от 445 ₽
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="dodo-banner-slider__CardContainer">
+          <div class="dodo-product-slider-card">
+            <img
+              class="dodo-product-slider-card__img"
+              src="allImages/images/Новое%20и%20популярное/image 2.png"
+              height="76"
+              width="76"
+            />
+            <div class="dodo-product-slider-card__info">
+              <p class="dodo-product-slider-card__par">Карбонара</p>
+              <p
+                class="dodo-product-slider-card__par dodo-product-slider-card__par--price"
+              >
+                от 445 ₽
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <ul class="dodo-menu-slider">
+      <li class="dodo-menu-slider--item">Пицца</li>
+      <li class="dodo-menu-slider--item">Комбо</li>
+      <li class="dodo-menu-slider--item">Закуски</li>
+      <li class="dodo-menu-slider--item">Десерты</li>
+      <li class="dodo-menu-slider--item">Напитки</li>
+      <li class="dodo-menu-slider--item">Другие товары</li>
+    </ul>
+    <!--   /*_____________________________________________________mobile-main_________________________________________________*/-->
+    <div class="dodo-main">
+      <div class="sticky-basket">
+        <div class="basket-meter">0</div>
+        <button class="mob-basket">
+          <img src="allImages/VectorCart.png" height="28" width="28" />
+        </button>
+      </div>
+
+      <div class="dodo-menu"></div>
+      <div class="dodo-menu"></div>
+      <div class="dodo-menu"></div>
+      <div class="dodo-menu"></div>
+    </div>
+
+    <!--______________________________________________Delivery and Payment_____________________________________________________-->
+    <div class="dodo-delivery-container">
+      <p class="dodo-delivery__header">Доставка и оплата</p>
+      <div class="dodo-delivery_wrap">
+        <div class="dodo-delivery_div">
+          <p class="dodo-delivery-title">60 МИНУТ ИЛИ ПИЦЦА БЕСПЛАТНО</p>
+          <p class="dodo-delivery-text">
+            Если мы не успеем доставить продукты в течение 60 минут, кроме
+            соусов и продуктов из раздела «Другие товары», курьер подарит вам
+            сертификат или промокод на большую пиццу 35 см на традиционном
+            тесте.
+          </p>
+        </div>
+        <div class="dodo-delivery_div">
+          <p class="dodo-delivery-title">
+            ДОДО ПИЦЦА — СЕТЬ ПИЦЦЕРИЙ № 1 В РОССИИ
+          </p>
+          <p class="dodo-delivery-text">
+            по доставке пиццы по данным из отчета Euromonitor International на
+            май 2017 года.<br />
+            Все цены в меню указаны без учета скидок
+          </p>
+        </div>
+        <div class="dodo-delivery_div">
+          <div class="dodo-delivery_div">
+            <p class="dodo-delivery-title">495 ₽</p>
+            <p class="dodo-delivery-text">
+              Минимальная сумма доставки без учета товаров из категории «Другие
+              товары»
+            </p>
+          </div>
+          <div class="dodo-delivery_div">
+            <p class="dodo-delivery-title">7000 ₽</p>
+            <p class="dodo-delivery-text">
+              Максимальная сумма при оплате наличн Изображения продуктов могут
+              отличаться от продуктов в заказе.
+            </p>
+          </div>
+        </div>
+        <div class="dodo-delivery_div">
+          <p class="dodo-delivery-title">ЗОНА ДОСТАВКИ ОГРАНИЧЕНА</p>
+          <a href="#"
+            ><img src="Rectangle 12.png" height="290" width="250"
+          /></a>
+        </div>
+      </div>
+    </div>
+
+    <!--______________________________________________Footer_____________________________________________________-->
+    <div class="dodo-align-footer">
+      <footer class="dodo-footer">
+        <a class="dodo-footer__link" href="#">feedback@dodopizza.com</a>
+        <div class="div-grey_line_container">
+          <div class="dodo-grey_line"></div>
+        </div>
+        <div class="dodo-footer-wrap-row dodo-footer--spaceBetween">
+          <div class="dodo-footer-columns">
+            <ul class="dodo-footer_list">
+              <p class="dodo-footer__title">Додо Пицца</p>
+              <li class="dodo-footer_list__item">О нас</li>
+              <li class="dodo-footer_list__item">Додо-книга</li>
+              <li class="dodo-footer_list__item">Блог «Сила ума»</li>
+              <li class="dodo-footer_list__item">Додо ИС</li>
+            </ul>
+            <ul class="dodo-footer_list">
+              <p class="dodo-footer__title">Работа</p>
+              <li class="dodo-footer_list__item">В пиццерии</li>
+              <li class="dodo-footer_list__item">
+                В контакт-<br />
+                центре
+              </li>
+            </ul>
+            <ul class="dodo-footer_list">
+              <p class="dodo-footer__title">Партнерам</p>
+              <li class="dodo-footer_list__item">Франшиза</li>
+              <li class="dodo-footer_list__item">Инвестиции</li>
+              <li class="dodo-footer_list__item">Поставщикам</li>
+              <li class="dodo-footer_list__item">Предложить помещение</li>
+            </ul>
+            <ul class="dodo-footer_list">
+              <p class="dodo-footer__title">Это интересно</p>
+              <li class="dodo-footer_list__item">
+                Экскурсии и<br />
+                мастер-классы
+              </li>
+              <li class="dodo-footer_list__item">Корпоративные заказы</li>
+            </ul>
+          </div>
+          <div class="div-grey_line_container">
+            <div class="dodo-grey_line"></div>
+          </div>
+          <div class="dodo-footer-wrap__right">
+            <div class="footer-logo-div">
+              <ul class="footer-logo-list">
+                <li class="footer-logo-list__item">
+                  <a href="#">
+                    <div class="dodo-footer-grey_square">
+                      <img
+                        src="allImages/images/ant-design_facebook-filled.png"
+                        height="20"
+                        width="20"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="footer-logo-list__item">
+                  <a href="#">
+                    <div class="dodo-footer-grey_square">
+                      <img
+                        src="allImages/images/bx_bxl-instagram.png"
+                        height="20"
+                        width="20"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="footer-logo-list__item">
+                  <a href="#">
+                    <div class="dodo-footer-grey_square">
+                      <img
+                        src="allImages/images/brandico_odnoklassniki.png"
+                        height="17"
+                        width="10"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="footer-logo-list__item">
+                  <a href="#">
+                    <div class="dodo-footer-grey_square">
+                      <img
+                        src="allImages/images/akar-icons_vk-fill.png"
+                        height="18"
+                        width="18"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li class="footer-logo-list__item">
+                  <a href="#">
+                    <div class="dodo-footer-grey_square">
+                      <img src="allImages/images/bi_youtube.png" height="16" width="16" />
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dodo-div-wrap">
+              <div class="footer-flex-start dodo-footer-wrap-row">
+                <img
+                  src="allImages/images/Google%20Play/image 6.png"
+                  height="60"
+                  width="155"
+                />
+                <img
+                  src="allImages/images/Google%20Play/image 7.png"
+                  height="60"
+                  width="156"
+                />
+              </div>
+              <div class="footer-contacts dodo-wrap--column">
+                <a class="dodo-footer_tel" href="#">8 800 302-00-60</a>
+                <p class="dodo-footer_tel__sign">Звонок бесплатный</p>
+              </div>
+              <a class="dodo-footer__link2" href="#">feedback@dodopizza.com</a>
+            </div>
+          </div>
+        </div>
+        <div class="dodo-footer-desktopSection">
+          <p class="dodo-footer-desktopSection__par">
+            <span class="dodo-footer-desktopSection__par--modify"
+              >1 396 362 874 ₽</span
+            ><br />
+            Выручка российской сети в этом месяце. В прошлом — 2 460 305 416 ₽
+          </p>
+          <p class="dodo-footer-desktopSection__par">
+            <span class="dodo-footer-desktopSection__par--modify"
+              >688 пиццерий</span
+            ><br />в 14 странах, включая Китай, США и Великобританию
+          </p>
+        </div>
+        <div class="div-grey_line_container">
+          <div class="dodo-grey_line"></div>
+        </div>
+        <div class="dodo-footer-BottomContainer">
+          <div class="dodo-footer__info">
+            <a class="footer-info__link" href="#">Правовая информация</a>
+            <a class="footer-info__link" href="#">Калорийность и состав</a>
+            <a class="footer-info__link" href="#">Помощь</a>
+          </div>
+          <img src="allImages/images/logo/копирайт.png" height="22" width="276" />
+        </div>
+      </footer>
+    </div>
+    <!--/*________________________________________ProductPopUp______________________________________________________________________*/-->
+    <script type="module" src="dodoJS/dodoShoppingTrolley.js"></script>
+    <script type="module" src="dodoJS/pizza.js"></script>
+    <script type="module" src="dodoJS/productsArray.js"></script>
+    <!--    <script src="dodoJS/mobBasket.js"></script>-->
+    <!--    <script src="tasksJs/cloneDo.js"></script>-->
+<!--        <script src="dodoJS/popUp.js"></script>-->
+  </body>
+</html>

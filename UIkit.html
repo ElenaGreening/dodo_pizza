@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dodoStyles/colours.css">
+    <link rel="stylesheet" href="dodoStyles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dodoStyles/UIkit.css">
+    <link rel="stylesheet" href="dodoStyles/doProductPopup.css">
+
+</head>
+<body>
+<!--__________________________slider-cards_______________________________-->
+
+<div class="dodo-product-slider-card">
+    <img class="dodo-product-slider-card__img" src="allImages/images/Новое%20и%20популярное/image 2.png" height="76" width="76"/>
+    <div class="dodo-product-slider-card__info">
+        <p class="dodo-product-slider-card__par">name</p>
+        <p class="dodo-product-slider-card__par dodo-product-slider-card__par--price">price</p>
+    </div>
+</div>
+
+<!--_____________________________________________Buttons________________________________________________________-->
+
+<button class="dodo-button-basket-static">Корзина</button>
+<button class="dodo-button-basket-hover">Корзина</button>
+<button class="dodo-button-enter-static">Войти</button>
+<button class="dodo-button-enter-hover">Войти</button>
+<button class="dodo-button-ToBasket-static">В корзину</button>
+<button class="dodo-button-ToBasket-hover">В корзину</button>
+<button class="dodo-button-price-static">price</button>
+<button class="dodo-button-price-hover"></button>
+<button class="dodo-button-makeYourOwnMob"></button>
+<button class="dodo-button-makeYourOwn"></button>
+
+<!--_____________________________________________EmptyBasket________________________________________________________-->
+<div class="dodo-EmptyBasket">
+    <img class="dodo-EmptyBasket__img" src="allImages/images/image%205.png">
+    <div class="dodo-EmptyBasket__div">
+        <p class="dodo-EmptyBasket__header">Ой, пусто!</p>
+        <p class="dodo-EmptyBasket__par">Мы всегда доставляем бесплатно,
+            но сумма заказа должна быть от 495 ₽</p>
+    </div>
+</div>
+<!--/*_________________________________________deviverytime_______________________________________________*/-->
+
+<div class="dodo-DeliveryTime">
+    <div class="dodo-DeliveryTime__square"></div>
+    <div class="dodo-DeliveryTime-div1">
+    <p class="dodo-DeliveryTime-div1__time">time</p>
+    <p class="dodo-DeliveryTime-div1__par1">Среднее время доставки</p>
+    <p class="dodo-DeliveryTime-div1__par2">Если не успеем за 60 минут,
+        вы получите сертификат на большую пиццу</p>
+    </div>
+    <div class="dodo-DeliveryTime-div2">
+        <p class="dodo-DeliveryTime-div2__rating">rating</p>
+        <p class="dodo-DeliveryTime-div2__scores">scores</p>
+        <p class="dodo-DeliveryTime-div2__par">Оценить заказ можно в мобильном приложении</p>
+    </div>
+    <div class="dodo-DeliveryTime-div3">
+        <p class="dodo-DeliveryTime-div3__par">Данные за последние 7 дней в вашем городе</p>
+    </div>
+</div>
+</div>
+
+<!--/*________________________________________Product-card______________________________________________________________________*/-->
+<div class="dodo-productCard dodo-productCard--border dodo-productCard--padding">
+    <img class="dodo-productCard__img" src="allImages/images/products/image 3.png"/>
+    <div class="dodo-productCard__info">
+        <h2 class="dodo-productCard__title">Чиззи чеддер</h2>
+        <p class="dodo-productCard__description">Ветчина, сыр чеддер, сладкий перец, моцарелла, томатный соус,
+            чеснок, итальянские травы</p>
+        <button class="dodo-button-price" data-id="3">от 395 ₽</button>
+        <div  class="dodo-productCard__priceInfo">
+            <p class="dodo-productCard__priceTag">98798</p>
+            <button class="dodo-button-choose">Выбрать</button>
+        </div>
+    </div>
+</div>
+
+<!--/*________________________________________ProductPopUp______________________________________________________________________*/-->
+<div class="dodo-product-popUp">
+    <div class="popup-arrow">
+        <img class="popup-arrow-img" src="allImages/VectorTick.png" height="14" width="24"/>
+    </div>
+    <img class="popupImg" src="#"/>
+    <button class="dodo-info-button">
+        <img src="allImages/VectorInfo.png" height="10" width="4"/>
+    </button>
+    <div class="dodo-popup-calories">
+    <h2 class="dodo-popup-calories-header">Пищевая ценность на 100 г</h2>
+    </div>
+
+
+    <h1 class="dodo-product-popUp-header"></h1>
+    <p>
+        <span>text</span>
+        <span>text</span>
+        <span>text</span>
+    </p>
+    <p class="popUp-description"></p>
+    <p class="pizza-ingredients">
+        <span class="dodo-product-popUp-span">
+            <img class = "dodo-product-popUp-span-img__cross" src="allImages/cross.png" height="14" width="14"/>
+            <img class = "dodo-product-popUp-span-img__back" src="allImages/arrowback.png" height="14" width="14"/>
+        </span>
+    </p>
+    <div class="dodo-popup-fieldsets">
+    <fieldset class="dodo-radio-fieldset">
+        <div class="dodo-radio-fieldset--lableStyle">
+        <input class="dodo-popUp-input" type="radio" id = "small" name = 'sizes'>
+        <label class="dodo-radio-label" for="small">Маленькая</label>
+        </div>
+
+        <div class="dodo-radio-fieldset--lableStyle">
+        <input class="dodo-popUp-input"  type="radio" id = "medium" name = 'sizes'>
+        <label class="dodo-radio-label" for="medium">Средняя</label>
+        </div>
+        <div class="dodo-radio-fieldset--lableStyle">
+        <input class="dodo-popUp-input" type="radio" id = "big" name = 'sizes'>
+        <label class="dodo-radio-label" for="big">Большая</label>
+        </div>
+
+    </fieldset>
+    <fieldset class="dodo-radio-fieldset">
+        <input class="dodo-popUp-input dodo-popUp-input--dough" type="radio" id="traditional" name="dough">
+        <label class="dodo-radio-label " for="traditional">Традиционное</label>
+
+        <input class="dodo-popUp-input dodo-popUp-input--dough" type="radio" id="thin" name="dough">
+        <label class="dodo-radio-label" for="thin">Тонкое</label>
+
+    </fieldset>
+    </div>
+    <h2 class="dodo-product-popUp-header">
+        Добавить в пиццу
+    </h2>
+    <fieldset class="toppings--container">
+        <div class = "dodo-topping-sweetWrapper">
+            <input class="dodo-topping-input" id="topping__toggle" type="checkbox">
+        <label  class ="dodo-topping-label" for="topping__toggle">
+            <!--            <div class = "dodo-topping-wrap">-->
+                <img class="dodo-topping-img" src="allImages/toppingImg/cheeseborder.png">
+                <h2 class="topping-header"></h2>
+                <p class="topping-price"></p>
+<!--            </div>-->
+        </label>
+        </div>
+    </fieldset>
+    <button class="dodo-product-popUp-toBasket-button"></button>
+</div>
+
+------------------------------------------Basket-popup--------------------------
+
+
+
+<script src="dodoJS/pizza.js"></script>
+</body>
+</html>

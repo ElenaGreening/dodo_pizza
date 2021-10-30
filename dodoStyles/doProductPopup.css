@@ -1,0 +1,605 @@
+.dodo-shopping-trolley{
+    display: none;
+    width: 320px;
+    background-color: #F3F3F7;
+    height: 1000px;
+    position: fixed;
+    z-index: 3;
+    margin-top: 47px;
+}
+.dodo-product-quantity{
+    margin-top: 0;
+    padding-top: 25px;
+    height: 50px;
+    width: 320px;
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+.dodo-shopping-trolley-product{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    flex-direction: column;
+    width: 320px;
+    height: 144px;
+    margin-bottom: 10px;
+}
+.dodo-shopping-trolley-product-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+border-left: #E1E1E8;
+    width: 1px;
+}
+.dodo-shopping-trolley-product-img{
+    width: 60px;
+    height: 60px;
+}
+.dodo-shopping-trolley-product-info{
+    display: flex;
+    flex-direction: column;
+}
+.dodo-shopping-trolley-product-title{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+.dodo-shopping-trolley-product-shortInfo{
+    color: #72788B;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+.dodo-shopping-trolley-product-additionalIngredients{
+    color: #72788B;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+}
+.dodo-shopping-trolley_greyLine{
+    background-color: crimson;
+    height: 8px;
+    width: 300px;
+}
+.dodo-shopping-trolley-product-priceQuantity{
+    border-top: #E1E1E8;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    width: 290px;
+}
+.dodo-shopping-trolley-product-Quantity--button{
+    width: 96px;
+    height: 32px;
+margin-right: 20px;
+}
+.dodo-shopping-trolley-product-price{
+    margin-left: 20px;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+}
+.dodo-basket-svg{
+    width: 11px;
+    height: 12px;
+}
+.dodo-shopping-trolley-slider{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.dodo-shopping-trolley-slider_SauceCard{
+    background-color: #FFFFFF;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+    width: 80px;
+    height: 108px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+.dodo-shopping-trolley-slider_title{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+}
+.dodo-shopping-trolley-slider_Card{
+    background-color: #FFFFFF;
+    max-width: 240px;
+    max-height: 180px;
+    display: flex;
+    flex-direction: row;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+}
+.dodo-shopping-trolley-slider-img{
+    width: 86px;
+    height: 86px;
+}
+.dodo-shopping-trolley-slider-info-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.dodo-shopping-trolley-slider_title{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    margin: 0;
+}
+.dodo-shopping-trolley-slider_price{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+}
+.dodo-shopping-trolley-fieldset {
+    display: flex;
+    flex-direction: row;
+    width: 320px;
+    height: 30px;
+    padding: 0;
+}
+.dodo-shopping-trolley-promoInput{
+    width: 175px;
+    height: 30px;
+    border: 1px solid #B8BDCF;
+    border-radius: 30px 0px 0px 30px;
+}
+.dodo-shopping-trolley-promoButton{
+    width: 114px;
+    height: 30px;
+    background-color: #F96900;
+    border-radius: 0px 30px 30px 0px;
+}
+.wrap-SpaceBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.dodo-shopping-trolley-button{
+    font-family: Nunito, sans-serif;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    width: 288px;
+    height: 48px;
+    background-color: #F96900;
+    border-color: transparent;
+    border-radius: 30px;
+}
+.dodo-product-popUp{
+    z-index: 2;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+    padding-left: 0px;
+    padding-right: 16px;
+    padding-top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(25px);
+}
+.dodo-product-popUp-darkArea{
+    z-index: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.popup-body{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    padding-left: 15px;
+    padding-bottom: 20px;
+width: 330px;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+.dodo-popup-wrapper{
+    flex-grow: 1;
+    overflow: scroll;
+}
+.dodo-info-button{
+    background-color: #F0F2F5;
+    position: relative;
+    top: 40px;
+    left: 290px;
+    width: 24px;
+    height: 24px;
+    border-color: transparent;
+    border-style: none;
+    border-radius: 1000px;
+}
+.dodo-info-button:hover{
+    background-color: rgb(92, 99, 112);;
+
+}
+.dodo-info-button:focus{
+    background-color: rgb(92, 99, 112);;
+
+}
+.dodo-info-button--img{
+    height: 10px;
+    width: 4px;
+}
+.dodo-popup-calories{
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 137px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: rgb(55, 53, 53);
+}
+.dodo-popup-calories-header{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    margin: 0;
+    color: #73798C;
+}
+.dodo-product-popUp-header{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+
+.dodo-product-popUp-header--nunito16{
+    font-size: 16px;
+}
+
+
+.pizza-ingredients{
+
+}
+.popup-ingredientsButton {
+    display: inline-block;
+    vertical-align: middle;
+    border-color: #ffffff;
+    border-style: none;
+    box-shadow: none;
+    background-color: #FFFFFF;
+}
+
+.ingredientsButtonImg{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../allImages/cross.png");
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 14px;
+    margin: 0;
+}
+.ingredientsButtonImg--focus{
+    background-repeat: no-repeat;
+    background-image: url("../allImages/arrowback.png");
+}
+
+.popup-shortInfo{
+    display: flex;
+
+
+}
+/*.lol>.ingredientsButtonImg{*/
+/*    background-color: #999999;*/
+
+/*}*/
+.dodo-product-popUp-span-img__cross{
+    display: none;
+}
+.dodo-product-popUp-span-img__back{
+    display: none;
+}
+/*--------------------------------------------radio------------------------------------*/
+.dodo-popup-fieldsets{
+
+}
+.dodo-radio-fieldset{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 288px;
+    height: 32px;
+    background-color: #f3f3f7;
+    border-style: none;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+ /*для элемента input c type="radio" */
+.dodo-radio-label-small{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.dodo-radio-label-medium{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dodo-radio-label-big{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.dodo-radio-label-traditional{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.dodo-radio-label-thin{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.dodo-popUp-input{
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+/* для элемента label связанного с .custom-radio */
+.dodo-popUp-input+label
+{
+    display: inline-flex;
+    text-align: center;
+
+
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.dodo-popUp-input+label::before{
+    content: '';
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.dodo-popUp-input:checked+label {
+    width: 33%;
+    height: 28px;
+    text-align: center;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+
+}
+
+.dodo-popUp-input-dough{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+/* для элемента label связанного с .custom-radio */
+.dodo-popUp-input-dough+label
+{
+    display: inline-flex;
+    /*text-align: center;*/
+
+
+}
+/* создание в label псевдоэлемента  before со следующими стилями */
+.dodo-popUp-input-dough+label::before{
+    content: '';
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.dodo-popUp-input-dough:checked+label {
+    width: 50%;
+    height: 28px;
+    text-align: center;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+
+}
+
+/*-----------------toppings-----*/
+
+.toppings--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    border-style: none;
+    border-color: transparent;
+}
+
+.additionalIngredients-disabled{
+
+}
+.dodo-topping-sweetWrapper{
+    border-style: none;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: none;
+    margin-bottom: 10px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.dodo-topping-sweetWrapper:disabled+label{
+    border-style: solid;
+    border-color: red;
+}
+.dodo-topping-sweetWrapper:checked {
+    background-image: url("../allImages/cil_check-circle.png");
+    background-repeat: no-repeat;
+    background-position: 80% 10%;
+}
+.dodo-topping-label{
+}
+.dodo-topping-input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.dodo-topping-input:disabled{
+
+}
+
+.dodo-topping-input+label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 20px;
+    width: 115px;
+    height: 150px;
+    box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+
+}
+
+.dodo-topping-input+label::before {
+    content: '';
+
+}
+
+.dodo-topping-input:checked+label {
+    background-image: url("../allImages/cil_check-circle.png");
+    background-repeat: no-repeat;
+    background-position: 85% 10%;
+    border-color: #F96900;
+    border-radius: 10px;
+    /*background-image: url("/Users/elenapetrova/currentday/cil_check-circle.png");*/
+
+}
+
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.dodo-topping-input:disabled+label{
+    background-color: #e9ecef;
+}
+.check-img{
+position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+
+.dodo-topping-img{
+    margin-right: 25px;
+    width: 84px;
+    height: 84px;
+}
+
+.topping-header{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    max-width: 81px;
+    margin: 0;
+}
+.topping-price {
+    font-family: Nunito sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin: 0;
+}
+.dodo-button-wrapper{
+    width: 100%;
+    height: 80px;
+    background-color: #FFFFFF;
+}
+.dodo-product-popUp-toBasket-button{
+    position: sticky;
+    background-color: #F96900;
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 288px;
+    height: 48px;
+    border-radius: 100px;
+    border-style: none;
+}
+
+.popupImg {
+    width: 325px;
+    height:325px;
+}
+
+.popup-arrow{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 48px;
+    height: 48px;
+    background-color: white;
+    box-shadow: 1px 1px 13px -1px rgba(34, 60, 80, 0.11);
+    border-radius: 50px;
+}
+.popup-arrow-img{
+    position: absolute;
+    top: 18px;
+    left: 11px;
+    width: 24px;
+    height: 14px;
+}
+.popup-ingredientsButton-dashed{
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.ingredientsButton-excluded{
+    text-decoration: line-through;
+
+}
